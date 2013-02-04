@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+
+    <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+         More info: h5bp.com/i/378 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title></title>
+    <meta name="description" content="">
+
+    <!-- Mobile viewport optimized: h5bp.com/viewport -->
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+    <!-- All JavaScript at the bottom, except this Modernizr build.
+         Modernizr enables HTML5 elements & feature detects for optimal performance.
+         Create your own custom Modernizr build: www.modernizr.com/download/ -->
+    <script src="js/vendor/modernizr-2.5.3.min.js"></script>
+    <!--[if lt IE 9]>
+<script src="dist/html5shiv.js"></script>
+<![endif]-->
+</head>
+<body>
+    <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+         chromium.org/developers/how-tos/chrome-frame-getting-started -->
+    <!--[if lt IE 7]><p class="chromeframe">Your browser is <em>ancient!</em> <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+    <!-- Add your site or application content here -->
+
+    <div id="wrapper">
+        <header>
+            <h1>Main header</h1>
+
+            <nav>
+                <ul>
+                    <li>Nav 1
+                        <ul>
+                            <li>Sub1</li>
+                            <li>Sub2</li>
+                            <li>Sub3</li>
+                        </ul>
+                    </li>
+                    <li>Nav 2</li>
+                    <li>Nav 3</li>
+                    <li>Nav 4</li>
+                    <li>Nav 5</li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section>
+        
+            <article>
+                <header>
+                    <h2>Article title</h2>
+                    <p>Posted on <time datetime="2009-09-04T16:31:24+02:00">September 4th 2009</time> by <a href="#">Writer</a> - <a href="#comments">6 comments</a></p>
+                </header>
+                <p>Using the alt tag.</p>
+                <ul>
+                    <li>The text should describe the image if the image contains information</li>
+                    <li>The text should explain where the link goes if the image is inside an < a > element</li>
+                    <li>Use alt="" if the image is only for decoration</li>
+                </ul>
+            </article>
+            
+            <article>
+                <header>
+                    <h2>Article title</h2>
+                    <p>Posted on <time datetime="2009-09-04T16:31:24+02:00">September 4th 2009</time> by <a href="#">Writer</a> - <a href="#comments">6 comments</a></p>
+                </header>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            </article>
+            
+        </section>
+
+        <aside>
+            <h2>An aside like an About section</h2>
+            <p>Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        </aside>
+
+        <footer>
+            <p>Copyright 2009 Your name</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript at the bottom for fast page loading: http://developer.yahoo.com/performance/rules.html#js_bottom -->
+
+    <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
+
+    <!-- scripts concatenated and minified via build script -->
+
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!-- end scripts -->
+
+    <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+         mathiasbynens.be/notes/async-analytics-snippet -->
+    <script>
+        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+</body>
+</html>
