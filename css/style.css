@@ -204,8 +204,19 @@ td {
   padding: 0.2em 0; }
 
 #wrapper {
-  width: 840px;
+  width: 80%;
   margin: 0 auto; }
+  @media screen and (min-width: 28.75em) {
+    #wrapper {
+      background: lightgreen; } }
+  @media screen and (min-width: 40.5em) {
+    #wrapper {
+      background: lightblue; } }
+  #wrapper #skipnav {
+    position: absolute;
+    top: -10000px; }
+    #wrapper #skipnav:focus, #wrapper #skipnav:active {
+      top: 0; }
   #wrapper header nav ul {
     position: relative; }
     #wrapper header nav ul li {

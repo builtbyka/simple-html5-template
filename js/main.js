@@ -46,7 +46,7 @@
 
 		function bind(){
 
-			if (Modernizr.csstransforms == 1) {
+			if (!Modernizr.csstransitions) {
 				$('nav > ul li').mouseenter(function(){
 					$(this).find('ul').hide().slideDown();
 				});

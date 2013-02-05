@@ -1,6 +1,23 @@
 #wrapper{
-	width: 840px;
+	width: 80%;
 	margin: 0 auto;
+
+	@media screen and (min-width: $break-medium) {
+	    background: lightgreen;
+ 	}
+
+  	@media screen and (min-width: $break-large) {
+    	background: lightblue;
+  	}
+
+  	#skipnav {
+	  position:absolute;
+	  top:-10000px;
+
+		  &:focus, &:active{
+		  	top: 0;
+		  }
+	}
 
 	header{
 		nav{
