@@ -1,7 +1,27 @@
-@mixin transition($time){
+@mixin opacity($amount){
 
-	-webkit-transition: all $time ease;
-	-moz-transition: all $time ease;
-	-o-transition: all $time ease;
-	transition: all $time ease;
+	$amountMult: ($amount * 100);
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=($amountMult))";
+
+  /* IE 5-7 */
+  filter: alpha(opacity=($amountMult));
+
+  /* Netscape */
+  -moz-opacity: ($amount);
+
+  /* Safari 1.x */
+  -khtml-opacity: ($amount);
+
+  /* Good browsers */
+  opacity: ($amount);
+}
+
+$time: 0.2s;
+
+@mixin transition($time){
+		-webkit-transition: all ($time) linear;
+		-moz-transition: all ($time) linear;
+		-o-transition: all ($time) linear;
+		transition: all ($time) linear;
 }
